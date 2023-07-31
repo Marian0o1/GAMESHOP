@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --color-red: #D01418;
+    --color-white: #F3F3F3;
+    --font-primary: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    width: 100%;
+}
+
+/* Diseño móvil - 411px */
+
+/* Sección header */
+
+header {
+    height: 5.625rem;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header>.logo_header {
+    display: flex;
+    align-items: center;
+    margin-left: 1.25rem;
+}
+
+.logo_header>.gameShop>span {
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.gameShop {
+    margin-left: 0.7rem;
+}
+
+header>nav>.items {
+    display: none;
+}
+
+header>.fa-bars {
+    color: var(--color-white);
+    font-size: 1.5rem;
+    margin-right: 1.25rem;
+}
+
+header>nav>.carrito {
+    display: none;
+}
+
+.rojo {
+    color: var(--color-red);
+}
+
+.blanco {
+    color: var(--color-white);
+}
+
+/* Sección hero */
+
+#hero {
+    height: 32rem;
+    background-image: url('img/img-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+#hero h1 {
+    width: 21rem;
+    height: 8.3125rem;
+    color: var(--color-white);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#hero .boton_comprar {
+    width: 13.75rem;
+    height: 3.8125rem;
+    border: transparent;
+    border-radius: 0.3125rem;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    font-size: 1.5625rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Sección main */
+
+main {
+    background: #F3F3F3;
+}
+
+#productos>.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.88rem;
+    margin-top: 1.56rem;
+}
+
+#productos>h2 {
+    margin-top: 1.56rem;
+    color: #000;
+    font-size: 1.875rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+#productos>.container>article {
+    width: 15rem;
+    height: 20.125rem;
+    border-radius: 0.3125rem;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#productos>.container>article>img {
+    width: 8.125rem;
+    height: 10.1875rem;
+}
+
+#productos>.container>article>hr {
+    width: 15rem;
+    margin-top: 1.88rem;
+    margin-bottom: 1.31rem;
+    stroke-width: 0.2px;
+    stroke: #222;
+}
+
+.precio {
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.interes {
+    color: #000;
+    font-size: 0.8125rem;
+    font-weight: 400;
+}
+
+.envio {
+    color: #619D00;
+    font-size: 0.625rem;
+    font-weight: 400;
+}
+
+/* Sección banner */
+
+#banner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#banner>.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.25rem;
+}
+
+#banner>h2 {
+    margin-top: 5.31rem;
+    width: 16.125rem;
+    height: 2.1875rem;
+    color: #000;
+    font-size: 1.875rem;
+    font-weight: 400;
+}
+
+#banner>.contenedor>article {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-radius: 0.2rem;
+}
+
+.sillas-gamer {
+    background-image: url('img/sillas-gamer.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18rem;
+    height: 6.75rem;
+}
+
+.computadoras {
+    background-image: url('img/pc-gamer.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18.03606rem;
+    height: 6.75rem;
+    margin-bottom: 5.25rem;
+}
+
+#banner>.contenedor>article>span {
+    color: #F3F3F3;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    margin-right: 1.87rem;
+}
+
+/* Sección footer */
+
+footer {
+    height: 11.9375rem;
+    background-color: #222;
+}
+
+footer>.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo-footer {
+    margin-top: 1rem;
+}
+
+.logo-footer>img {
+    width: 2.49081rem;
+    height: 2.5rem;
+}
+
+.logo-footer>span {
+    font-size: 1.5625rem;
+    font-weight: 700;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container>.redes>.titulo-footer {
+    color: #F3F3F3;
+    font-size: 1.5625rem;
+    font-weight: 400;
+}
+
+.redes>.imagenes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes>.imagenes>img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.derechos {
+    height: 1.5625rem;
+    background-color: #c4c4c4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.derechos>p {
+    color: #000;
+    font-size: 0.625rem;
+    font-weight: 400;
+}
+
+/* Responsive design - 1024px */
+
+@media screen and (min-width: 1024px) {
+
+    /* Sección header */
+
+    header>.fa-bars {
+        display: none;
+    }
+
+    header>nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 21rem;
+        height: 1.5rem;
+        margin-right: 2.26rem;
+    }
+
+    header>nav>.items {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    nav>.items>a {
+        display: block;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--color-white);
+    }
+
+
+    header>nav>.carrito {
+        display: block;
+    }
+
+
+    /* Sección main */
+
+    #hero {
+        gap: 0;
+    }
+
+    #hero>h1 {
+        width: auto;
+    }
+
+    /* Sección productos destacados */
+
+    #productos>.container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #productos>.container>article {
+        width: 16rem;
+    }
+
+    /* Sección banner */
+
+    #banner>.contenedor {
+        flex-direction: row;
+        align-items: baseline;
+        gap: 7rem;
+    }
+
+    #banner>.contenedor>article {
+        width: 22rem;
+        height: 8.4375rem;
+    }
+
+    /* Sección footer */
+
+    footer>.container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3rem;
+    }
+}
